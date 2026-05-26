@@ -168,14 +168,14 @@ function Story() {
           <h1 className="serif text-5xl md:text-7xl leading-[1.05] max-w-3xl">
             i wasn't looking for anything.
             <br />
-            I was just scrolling but then 
+            I was just scrolling but then
             <br />
-            a stupid asked me to "this convo can take any turn but it depends on what road you choose."
+            a stupid asked me "this convo can take any turn but it depends on what road you choose."
           </h1>
         </Reveal>
       </section>
 
-      <QuoteLine tag="01 · JUMP TO THE ACT">you on my main screen</QuoteLine>
+      <QuoteLine tag="01 · JUMP TO THE ACT">The first interaction</QuoteLine>
 
       {/* main screen moment */}
       <section className="min-h-screen flex items-center px-6 max-w-5xl mx-auto">
@@ -188,7 +188,7 @@ function Story() {
               i didn't mean to put him there. he just{" "}
               <span className="italic">ended up</span> there.
               <br />
-              the chat. the notifications. the small green dot.
+              the chat. the notifications. the small dot.
             </p>
             <p className="mono text-xs text-whisper mt-6 text-muted-foreground">
               ↳ realized "aapna kutch toh chal raha hai"
@@ -278,19 +278,19 @@ function Story() {
                   { from: "them", text: "wait" },
                   { from: "them", text: "WAIT no" },
                   { from: "them", text: "that pic was a mistake 💀" },
-                  { from: "me", text: "...flex pic? really??" },
-                  { from: "them", text: "delete it from your brain. now." },
+                  { from: "me", text: "really??" },
+                  { from: "them", text: "that was a glitch, i didnt meant to share that." },
                 ]}
               />
             </div>
             <p className="mono text-xs text-muted-foreground mt-6">
-              ↳ i did not delete it from my brain. I didnt know if i should be mad or impressed.
+              ↳ I didnt know if i should be mad or impressed.
             </p>
           </div>
         </Reveal>
       </section>
 
-      <QuoteLine tag="05 · THE BLOCK ">“i didnt meant to hurt you i didnt know it was touchy topic.”</QuoteLine>
+      <QuoteLine tag="05 · THE BLOCK ">The touchy topic.</QuoteLine>
 
       {/* weight comment — careful */}
       <section className="min-h-screen flex items-center px-6 max-w-4xl mx-auto">
@@ -308,7 +308,7 @@ function Story() {
             <div className="bubble them dim opacity-15">are you there</div>
             <div className="bubble them dim opacity-10">i'm sorry</div>
             <p className="mono text-[10px] text-muted-foreground pt-4">
-              ↳ blocked · 03:11 am
+              ↳ blocked
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-12 mt-20">
@@ -331,7 +331,7 @@ function Story() {
       <section className="min-h-screen flex items-center px-6 max-w-5xl mx-auto">
         <Reveal className="w-full">
           <p className="mono text-xs uppercase tracking-[0.3em] text-muted-foreground mb-6">
-            08 · THE DATE DISGUISED AS STUDY CALL
+            08 · You on my main screen
           </p>
           <div className="rounded-xl border border-border bg-card/40 backdrop-blur-sm p-6 max-w-3xl">
             <div className="flex items-center gap-3 mb-6">
@@ -353,11 +353,10 @@ function Story() {
               </div>
             </div>
             <p className="serif italic text-2xl mt-8 max-w-md">
-              we weren't even talking half the time.
+              we weren't even talking.
             </p>
             <p className="text-xs text-muted-foreground mt-3">
-              just the sound of two keyboards. occasionally a sigh. once, a yawn that
-              made me smile for no reason.
+              that was very out of the blue study date we did.
             </p>
           </div>
         </Reveal>
@@ -466,9 +465,9 @@ function Ending() {
 
   const l1 = useTyper("hum dono ka kuch toh chal raha hai", 60, trigger, 400);
   const d1 = l1.length === "hum dono ka kuch toh chal raha hai".length;
-  const l2 = useTyper("pata nahi.", 80, d1, 1200);
-  const d2 = l2.length === "pata nahi.".length;
-  const l3 = useTyper("offline", 140, d2, 1400);
+  const l2 = useTyper("kutch toh hai.", 80, d1, 1200);
+  const d2 = l2.length === "kutch toh hai.".length;
+  const l3 = useTyper("loading files...", 140, d2, 1400);
   const d3 = l3.length === "offline".length;
 
   return (
@@ -478,7 +477,7 @@ function Ending() {
     >
       <div className="max-w-2xl w-full">
         <p className="mono text-xs uppercase tracking-[0.3em] text-muted-foreground mb-10">
-          ~/offline · end of buffer
+          ~/buffer
         </p>
         <p className="serif italic text-3xl md:text-5xl leading-tight min-h-[1.2em]">
           {l1}
